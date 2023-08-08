@@ -1,7 +1,7 @@
 Dependencies for Project 'Template', Target 'Template': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::ARMCC
 F (.\main.c)(0x64C8DD20)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
-I (allFiles.h)(0x64C77660)
+I (allFiles.h)(0x64CB5911)
 I (stm32f4xx.h)(0x5821A2C0)
 I (..\CORE\core_cm4.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -39,13 +39,14 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Keil5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\SYSTEM\sys\sys.h)(0x5821A2C0)
 I (..\HARDWARE\LED\led.h)(0x5821A364)
 I (..\HARDWARE\PWM\pwm.h)(0x64C92147)
-I (..\USER\allFiles.h)(0x64C77660)
+I (..\USER\allFiles.h)(0x64CB5911)
 I (..\SYSTEM\delay\delay.h)(0x5821A2C0)
 I (..\SYSTEM\usart\usart.h)(0x5821A2C0)
-I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64CA514D)
+I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64D20751)
 F (.\stm32f4xx_it.c)(0x5821A2C0)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f4xx_it.o --omf_browse ..\obj\stm32f4xx_it.crf --depend ..\obj\stm32f4xx_it.d)
 I (stm32f4xx_it.h)(0x5821A2C0)
 I (stm32f4xx.h)(0x5821A2C0)
@@ -1460,7 +1461,7 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5821A2C0)
 I (..\SYSTEM\usart\usart.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (.\allFiles.h)(0x64C77660)()
+F (.\allFiles.h)(0x64CB5911)()
 F (..\readme.txt)(0x64B90086)()
 F (..\HARDWARE\LED\led.c)(0x5821A364)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
 I (..\HARDWARE\LED\led.h)(0x5821A364)
@@ -1499,8 +1500,8 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5821A2C0)
-F (..\HARDWARE\STEP_MOTER\step_motor.c)(0x64CA3689)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\step_motor.o --omf_browse ..\obj\step_motor.crf --depend ..\obj\step_motor.d)
-I (..\USER\allFiles.h)(0x64C77660)
+F (..\HARDWARE\STEP_MOTER\step_motor.c)(0x64D20751)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\step_motor.o --omf_browse ..\obj\step_motor.crf --depend ..\obj\step_motor.d)
+I (..\USER\allFiles.h)(0x64CB5911)
 I (..\USER\stm32f4xx.h)(0x5821A2C0)
 I (..\CORE\core_cm4.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1537,14 +1538,15 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Keil5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\SYSTEM\sys\sys.h)(0x5821A2C0)
 I (..\HARDWARE\LED\led.h)(0x5821A364)
 I (..\HARDWARE\PWM\pwm.h)(0x64C92147)
 I (..\SYSTEM\delay\delay.h)(0x5821A2C0)
 I (..\SYSTEM\usart\usart.h)(0x5821A2C0)
-I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64CA514D)
-F (..\HARDWARE\PWM\pwm.c)(0x64CA3689)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\pwm.o --omf_browse ..\obj\pwm.crf --depend ..\obj\pwm.d)
-I (..\USER\allFiles.h)(0x64C77660)
+I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64D20751)
+F (..\HARDWARE\PWM\pwm.c)(0x64CB5911)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\FWLIB\inc -I ..\HARDWARE\LED -I ..\HARDWARE\PWM -I ..\HARDWARE\STEP_MOTER -I ..\SYSTEM-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\pwm.o --omf_browse ..\obj\pwm.crf --depend ..\obj\pwm.d)
+I (..\USER\allFiles.h)(0x64CB5911)
 I (..\USER\stm32f4xx.h)(0x5821A2C0)
 I (..\CORE\core_cm4.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1581,9 +1583,10 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5821A2C0)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5821A2C0)
 I (D:\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Keil5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\SYSTEM\sys\sys.h)(0x5821A2C0)
 I (..\HARDWARE\LED\led.h)(0x5821A364)
 I (..\HARDWARE\PWM\pwm.h)(0x64C92147)
 I (..\SYSTEM\delay\delay.h)(0x5821A2C0)
 I (..\SYSTEM\usart\usart.h)(0x5821A2C0)
-I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64CA514D)
+I (..\HARDWARE\STEP_MOTER\step_motor.h)(0x64D20751)

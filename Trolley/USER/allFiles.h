@@ -4,6 +4,7 @@
 #include "stm32f4xx.h"
 #include <string.h>
 #include <stdio.h>
+#include <math.h>
 
 #include "sys.h"
 #include "led.h"

@@ -37,6 +37,7 @@
 ..\obj\step_motor.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\step_motor.o: ..\SYSTEM\sys\sys.h
 ..\obj\step_motor.o: ..\HARDWARE\LED\led.h
 ..\obj\step_motor.o: ..\HARDWARE\PWM\pwm.h

@@ -37,6 +37,7 @@
 ..\obj\main.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\HARDWARE\LED\led.h
 ..\obj\main.o: ..\HARDWARE\PWM\pwm.h

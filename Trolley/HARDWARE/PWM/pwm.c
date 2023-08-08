@@ -47,7 +47,7 @@ void ST_PWM_Init(void)
 	TIM_InternalClockConfig(TIM10);
 	TIM_InternalClockConfig(TIM9);
 	//TIM3
-	TIM_TimeBaseStructure.TIM_Prescaler=TIM_PRESCALER - 1;  //定时器分频
+	TIM_TimeBaseStructure.TIM_Prescaler=TIM_PRESCALER;  //定时器分频
 	TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; //向上计数模式
 	TIM_TimeBaseStructure.TIM_Period = 65535 - 1;   //自动重装载值
 	TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 
