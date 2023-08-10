@@ -79,7 +79,14 @@ void ST_PWM_Init(void)
 //	TIM_ARRPreloadConfig(TIM9,ENABLE);
 	
 	TIM_ClearFlag(TIM3, TIM_FLAG_CC1);
+	TIM_ClearFlag(TIM9, TIM_FLAG_CC1);
+	TIM_ClearFlag(TIM10, TIM_FLAG_CC1);
+	TIM_ClearFlag(TIM11, TIM_FLAG_CC1);
+	
 	TIM_ITConfig(TIM3, TIM_IT_CC1, ENABLE);
+	TIM_ITConfig(TIM9, TIM_IT_CC1, ENABLE);
+	TIM_ITConfig(TIM10, TIM_IT_CC1, ENABLE);
+	TIM_ITConfig(TIM11, TIM_IT_CC1, ENABLE);
 	
 	NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
@@ -87,8 +94,12 @@ void ST_PWM_Init(void)
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
 	NVIC_Init(&NVIC_InitStructure);
 	
-	TIM_Cmd(TIM3, ENABLE);  //Ê¹ÄÜTIM14		
-	TIM_Cmd(TIM11, ENABLE);
-	TIM_Cmd(TIM10, ENABLE);
-	TIM_Cmd(TIM9, ENABLE);
+	NVIC_InitStructure.NVIC_IRQChannel = TIM1_BRK_TIM9_IRQn;
+	NVIC_Init(&NVIC_InitStructure);
+	
+	NVIC_InitStructure.NVIC_IRQChannel = TIM1_UP_TIM10_IRQn;
+	NVIC_Init(&NVIC_InitStructure);
+	
+	NVIC_InitStructure.NVIC_IRQChannel = TIM1_TRG_COM_TIM11_IRQn;
+	NVIC_Init(&NVIC_InitStructure);
 }  
