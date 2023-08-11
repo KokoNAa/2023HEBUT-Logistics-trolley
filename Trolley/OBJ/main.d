@@ -45,3 +45,5 @@
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
 ..\obj\main.o: ..\HARDWARE\STEP_MOTER\step_motor.h
+..\obj\main.o: ..\HARDWARE\MH\MH.h
+..\obj\main.o: ..\HARDWARE\CAR_DRIVE\car_drive.h

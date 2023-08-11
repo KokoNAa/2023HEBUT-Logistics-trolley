@@ -22,27 +22,59 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\Logistics trolley\2023HEBUT-Logistics trolley\Trolley\USER\Template.uvprojx
-Project File Date:  07/31/2023
+Project File Date:  08/11/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
 Build target 'Template'
+compiling car_drive.c...
+..\HARDWARE\STEP_MOTER\step_motor.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "allFiles.h""
+..\HARDWARE\MH\MH.h(9): warning:  #1295-D: Deprecated declaration op_acc - give arg types
+  void op_acc();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\CAR_DRIVE\car_drive.c(14): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\CAR_DRIVE\car_drive.c: 4 warnings, 0 errors
+compiling MH.c...
+..\HARDWARE\STEP_MOTER\step_motor.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "allFiles.h""
+..\HARDWARE\MH\MH.h(9): warning:  #1295-D: Deprecated declaration op_acc - give arg types
+  void op_acc();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\MH\MH.c(16): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\MH\MH.c: 4 warnings, 0 errors
 compiling main.c...
 ..\HARDWARE\STEP_MOTER\step_motor.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
   #include "allFiles.h""
-main.c: 1 warning, 0 errors
+..\HARDWARE\MH\MH.h(9): warning:  #1295-D: Deprecated declaration op_acc - give arg types
+  void op_acc();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+main.c: 3 warnings, 0 errors
 compiling pwm.c...
 ..\HARDWARE\STEP_MOTER\step_motor.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
   #include "allFiles.h""
-..\HARDWARE\PWM\pwm.c: 1 warning, 0 errors
+..\HARDWARE\MH\MH.h(9): warning:  #1295-D: Deprecated declaration op_acc - give arg types
+  void op_acc();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\PWM\pwm.c: 3 warnings, 0 errors
 compiling step_motor.c...
 ..\HARDWARE\STEP_MOTER\step_motor.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
   #include "allFiles.h""
-..\HARDWARE\STEP_MOTER\step_motor.c: 1 warning, 0 errors
+..\HARDWARE\MH\MH.h(9): warning:  #1295-D: Deprecated declaration op_acc - give arg types
+  void op_acc();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\STEP_MOTER\step_motor.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=13400 RO-data=424 RW-data=68 ZI-data=1932  
+Program Size: Code=15912 RO-data=424 RW-data=44 ZI-data=1732  
 FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 3 Warning(s).
+"..\OBJ\Template.axf" - 0 Error(s), 17 Warning(s).
 
 <h2>Software Packages used:</h2>
 

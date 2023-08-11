@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\HARDWARE\LED;..\HARDWARE\PWM;..\HARDWARE\STEP_MOTER;..\SYSTEM</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\HARDWARE\LED;..\HARDWARE\PWM;..\HARDWARE\STEP_MOTER;..\SYSTEM;..\HARDWARE\MH;..\HARDWARE\CAR_DRIVE</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -642,6 +642,21 @@
               <FileName>pwm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\PWM\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>MH.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\MH\MH.c</FilePath>
+            </File>
+            <File>
+              <FileName>car_drive.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\CAR_DRIVE\car_drive.c</FilePath>
+            </File>
+            <File>
+              <FileName>car_drive.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HARDWARE\CAR_DRIVE\car_drive.h</FilePath>
             </File>
           </Files>
         </Group>

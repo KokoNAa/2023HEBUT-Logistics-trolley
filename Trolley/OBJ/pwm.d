@@ -45,3 +45,5 @@
 ..\obj\pwm.o: ..\SYSTEM\delay\delay.h
 ..\obj\pwm.o: ..\SYSTEM\usart\usart.h
 ..\obj\pwm.o: ..\HARDWARE\STEP_MOTER\step_motor.h
+..\obj\pwm.o: ..\HARDWARE\MH\MH.h
+..\obj\pwm.o: ..\HARDWARE\CAR_DRIVE\car_drive.h

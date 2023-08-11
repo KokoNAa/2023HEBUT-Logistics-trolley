@@ -56,6 +56,13 @@ typedef struct
 #define ST4_EN_GPIO_PIN GPIO_Pin_3
 void step_motor_init(void);
 void ST1_Move(int32_t step, uint32_t accel, uint32_t decel, uint32_t speed);
-extern void speed_decision(void);
+void ST2_Move(int32_t step, uint32_t accel, uint32_t decel, uint32_t speed);
+void ST3_Move(int32_t step, uint32_t accel, uint32_t decel, uint32_t speed);
+void ST4_Move(int32_t step, uint32_t accel, uint32_t decel, uint32_t speed);
+void Move_Transfrom(double Vx,double Vy,double Vz);
+extern void speed1_decision(void);
+extern void speed2_decision(void);
+extern void speed3_decision(void);
+extern void speed4_decision(void);
 
 #endif

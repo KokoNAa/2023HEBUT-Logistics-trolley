@@ -377,15 +377,15 @@ void ST4_Move(int32_t step, uint32_t accel, uint32_t decel, uint32_t speed)
 			TIM_CCxCmd(TIM9,TIM_Channel_1,TIM_CCx_Enable);
 			TIM_Cmd(TIM9, ENABLE);																									//开启定时器
 }
-void speed_decision()                                                         //中断执行函数
+void speed1_decision()                                                         //中断执行函数
 {
 	__IO uint32_t tim_count=0;
 	__IO uint32_t tmp = 0;  
   uint16_t new_step_delay=0;                                                  // 保存新（下）一个延时周期  
-  __IO static uint16_t last_accel_delay=0;                                    // 加速过程中最后一次延时（脉冲周期）. 
-  __IO static uint32_t step_count = 0; 																			  // 总移动步数计数器  
-  __IO static int32_t rest = 0;																								// 记录new_step_delay中的余数，提高下一步计算的精度  
-  __IO static uint8_t i=0;																										//定时器使用翻转模式，需要进入两次中断才输出一个完整脉冲
+  __IO uint16_t last_accel_delay=0;                                    // 加速过程中最后一次延时（脉冲周期）. 
+  __IO uint32_t step_count = 0; 																			  // 总移动步数计数器  
+  __IO int32_t rest = 0;																								// 记录new_step_delay中的余数，提高下一步计算的精度  
+  __IO uint8_t i=0;																										//定时器使用翻转模式，需要进入两次中断才输出一个完整脉冲
  
   if (TIM_GetITStatus(TIM3, TIM_IT_CC1)== SET)
   {	
@@ -431,7 +431,12 @@ void speed_decision()                                                         //
 					break;
 					
 				case RUN:
-          step_count++;  																											// 步数加1				  
+          step_count++; 				// 步数加1	
+//		  if (srd1.min_delay > new_step_delay)//期望速度比当前大
+//		  {
+//		      srd1.run_state = ACCEL; 
+//			  break;
+//		  }
           new_step_delay = srd1.min_delay;   																  // 使用min_delay（对应最大速度speed）				 
           if(step_count >= srd1.decel_start)   																// 需要开始减速
 					{
@@ -456,6 +461,17 @@ void speed_decision()                                                         //
 			 srd1.step_delay = new_step_delay; 																			// 为下个(新的)延时(脉冲周期)赋值
 		}
 	}
+}
+void speed2_decision()                                                         //中断执行函数
+{
+	__IO uint32_t tim_count=0;
+	__IO uint32_t tmp = 0;  
+  uint16_t new_step_delay=0;                                                  // 保存新（下）一个延时周期  
+  __IO uint16_t last_accel_delay=0;                                    // 加速过程中最后一次延时（脉冲周期）. 
+  __IO uint32_t step_count = 0; 																			  // 总移动步数计数器  
+  __IO int32_t rest = 0;																								// 记录new_step_delay中的余数，提高下一步计算的精度  
+  __IO uint8_t i=0;																										//定时器使用翻转模式，需要进入两次中断才输出一个完整脉冲
+ 
     if (TIM_GetITStatus(TIM11, TIM_IT_CC1)== SET)// ST2进中断
 	{
 		TIM_ClearITPendingBit(TIM11, TIM_IT_CC1);																	// 清定时器中断		
@@ -524,6 +540,17 @@ void speed_decision()                                                         //
 			 srd2.step_delay = new_step_delay; 																			// 为下个(新的)延时(脉冲周期)赋值
 		}
 	}
+}
+void speed3_decision()                                                         //中断执行函数
+{
+	__IO uint32_t tim_count=0;
+	__IO uint32_t tmp = 0;  
+  uint16_t new_step_delay=0;                                                  // 保存新（下）一个延时周期  
+  __IO uint16_t last_accel_delay=0;                                    // 加速过程中最后一次延时（脉冲周期）. 
+  __IO uint32_t step_count = 0; 																			  // 总移动步数计数器  
+  __IO int32_t rest = 0;																								// 记录new_step_delay中的余数，提高下一步计算的精度  
+  __IO uint8_t i=0;																										//定时器使用翻转模式，需要进入两次中断才输出一个完整脉冲
+ 
 	if (TIM_GetITStatus(TIM10, TIM_IT_CC1)== SET)// ST3进中断
 	{
 		TIM_ClearITPendingBit(TIM10, TIM_IT_CC1);																	// 清定时器中断		
@@ -592,7 +619,18 @@ void speed_decision()                                                         //
 			 srd3.step_delay = new_step_delay; 																			// 为下个(新的)延时(脉冲周期)赋值
 		}
 	}
-	if (TIM_GetITStatus(TIM9, TIM_IT_CC1)== SET)// ST3进中断
+}
+void speed4_decision()                                                         //中断执行函数
+{
+	__IO uint32_t tim_count=0;
+	__IO uint32_t tmp = 0;  
+  uint16_t new_step_delay=0;                                                  // 保存新（下）一个延时周期  
+  __IO uint16_t last_accel_delay=0;                                    // 加速过程中最后一次延时（脉冲周期）. 
+  __IO uint32_t step_count = 0; 																			  // 总移动步数计数器  
+  __IO int32_t rest = 0;																								// 记录new_step_delay中的余数，提高下一步计算的精度  
+  __IO uint8_t i=0;																										//定时器使用翻转模式，需要进入两次中断才输出一个完整脉冲
+ 
+	if (TIM_GetITStatus(TIM9, TIM_IT_CC1)== SET)// ST4进中断
 	{
 		TIM_ClearITPendingBit(TIM9, TIM_IT_CC1);																	// 清定时器中断		
 	    tim_count = TIM_GetCounter(TIM9);																					//获取计数值
@@ -661,7 +699,13 @@ void speed_decision()                                                         //
 		}
 	}
 }
-// 整车移动量转换为单轮速度  x:前+后-  y:左+右-  z:逆+顺-
+/*********************************************
+ *函数：麦克纳姆轮运动学解算函数
+ *函数名：Move_Transfrom(double Vx,double Vy,double Vz)
+*备注:整车移动量转换为单轮速度  x:前+后-  y:左+右-  z:逆+顺-
+ *日期：2023.08.10
+ *修改日期：
+ *********************************************/
 void Move_Transfrom(double Vx,double Vy,double Vz)
 {
 	uint32_t step_accel =25;         // 加速度 单位为0.1rad/sec^2
@@ -681,6 +725,20 @@ void Move_Transfrom(double Vx,double Vy,double Vz)
 
 void TIM3_IRQHandler(void)
 {
-	speed_decision();
+	speed1_decision();
 }
 
+void TIM11_IRQHandler(void)
+{
+	speed2_decision();
+}
+
+void TIM10_IRQHandler(void)
+{
+	speed3_decision();
+}
+
+void TIM9_IRQHandler(void)
+{
+	speed4_decision();
+}
