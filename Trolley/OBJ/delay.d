@@ -3,7 +3,7 @@
 ..\obj\delay.o: ..\SYSTEM\sys\sys.h
 ..\obj\delay.o: ..\USER\stm32f4xx.h
 ..\obj\delay.o: ..\CORE\core_cm4.h
-..\obj\delay.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\delay.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\delay.o: ..\CORE\core_cmInstr.h
 ..\obj\delay.o: ..\CORE\core_cmFunc.h
 ..\obj\delay.o: ..\CORE\core_cm4_simd.h

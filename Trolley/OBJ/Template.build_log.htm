@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: a Administrator, a, LIC=NQQMA-1Y5W0-HLVCL-0NSTS-70GQG-4HN79
+License Information: 11 Administrator, 1, LIC=VGXG8-3MDFT-FW32N-YHG13-J9CM3-AVGMG
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
-Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+Toolchain Path:  G:\Keil 5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 7 (build 960)
 Assembler:       Armasm.exe V5.06 update 7 (build 960)
 Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
@@ -21,13 +21,276 @@ Target DLL:      CMSIS_AGDI.dll V1.33.0.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\Logistics trolley\2023HEBUT-Logistics trolley\Trolley\USER\Template.uvprojx
-Project File Date:  09/01/2023
+G:\2023HEBUT-Logistics-trolley\Trolley\USER\Template.uvprojx
+Project File Date:  09/13/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'G:\Keil 5\ARM\ARMCC\Bin'
 Build target 'Template'
-"..\OBJ\Template.axf" - 0 Error(s), 0 Warning(s).
+assembling startup_stm32f40_41xxx.s...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling main.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+main.c(8): warning:  #177-D: variable "lcd_id"  was declared but never referenced
+  	u8 lcd_id[12];
+main.c: 14 warnings, 0 errors
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_crc.c...
+compiling misc.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_hash.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_hash_md5.c...
+compiling stm32f4xx_hash_sha1.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_sai.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_wwdg.c...
+compiling delay.c...
+compiling led.c...
+compiling sys.c...
+compiling pwm.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\HARDWARE\PWM\pwm.c(339): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\PWM\pwm.c: 14 warnings, 0 errors
+compiling car_drive.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.c(36): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\CAR_DRIVE\car_drive.c: 14 warnings, 0 errors
+compiling usart.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\SYSTEM\usart\usart.c: 13 warnings, 0 errors
+compiling state.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\HARDWARE\State Machine\state.c: 13 warnings, 0 errors
+compiling MH.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\HARDWARE\MH\MH.c(297): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\MH\MH.c: 14 warnings, 0 errors
+compiling step_motor.c...
+..\HARDWARE\PWM\pwm.h(16): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+..\HARDWARE\PWM\pwm.h(20): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif;
+..\HARDWARE\STEP_MOTER\step_motor.h(76): warning:  #1295-D: Deprecated declaration step_stop - give arg types
+  void step_stop();
+..\HARDWARE\STEP_MOTER\step_motor.h(77): warning:  #1295-D: Deprecated declaration step_start - give arg types
+  void step_start();
+..\HARDWARE\MH\MH.h(15): warning:  #1295-D: Deprecated declaration M_Init - give arg types
+  void M_Init();
+..\HARDWARE\MH\MH.h(16): warning:  #1295-D: Deprecated declaration takeout_ctrl - give arg types
+  void takeout_ctrl();
+..\HARDWARE\MH\MH.h(17): warning:  #1295-D: Deprecated declaration takein_ctrl - give arg types
+  void takein_ctrl();
+..\HARDWARE\MH\MH.h(18): warning:  #1295-D: Deprecated declaration QR_ctrl - give arg types
+  void QR_ctrl();
+..\HARDWARE\MH\MH.h(19): warning:  #1295-D: Deprecated declaration find_ctrl - give arg types
+  void find_ctrl();
+..\HARDWARE\MH\MH.h(21): warning:  #1295-D: Deprecated declaration Init_ctrl - give arg types
+  void Init_ctrl();
+..\HARDWARE\CAR_DRIVE\car_drive.h(7): warning:  #1295-D: Deprecated declaration out_ku - give arg types
+  void out_ku();
+..\HARDWARE\State Machine\state.h(16): warning:  #1295-D: Deprecated declaration state_Init - give arg types
+  void state_Init();
+..\HARDWARE\State Machine\state.h(18): warning:  #1295-D: Deprecated declaration state_ctrl - give arg types
+  void state_ctrl();
+..\HARDWARE\STEP_MOTER\step_motor.c(830): warning:  #177-D: variable "step_accel"  was declared but never referenced
+  	uint32_t step_accel =50;         // 加速度 单位为0.1rad/sec^2
+..\HARDWARE\STEP_MOTER\step_motor.c(831): warning:  #177-D: variable "step_decel"  was declared but never referenced
+  	uint32_t step_decel = 50;         // 减速度 单位为0.1rad/sec^2
+..\HARDWARE\STEP_MOTER\step_motor.c(835): warning:  #177-D: variable "dir1"  was declared but never referenced
+  	int16_t dir1 = 0, dir2 = 0, dir3 = 0, dir4 = 0;
+..\HARDWARE\STEP_MOTER\step_motor.c(835): warning:  #177-D: variable "dir2"  was declared but never referenced
+  	int16_t dir1 = 0, dir2 = 0, dir3 = 0, dir4 = 0;
+..\HARDWARE\STEP_MOTER\step_motor.c(835): warning:  #177-D: variable "dir3"  was declared but never referenced
+  	int16_t dir1 = 0, dir2 = 0, dir3 = 0, dir4 = 0;
+..\HARDWARE\STEP_MOTER\step_motor.c(835): warning:  #177-D: variable "dir4"  was declared but never referenced
+  	int16_t dir1 = 0, dir2 = 0, dir3 = 0, dir4 = 0;
+..\HARDWARE\STEP_MOTER\step_motor.c(836): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i = 0;
+..\HARDWARE\STEP_MOTER\step_motor.c: 20 warnings, 0 errors
+compiling lcd.c...
+linking...
+Program Size: Code=47448 RO-data=7160 RW-data=448 ZI-data=1792  
+FromELF: creating hex file...
+"..\OBJ\Template.axf" - 0 Error(s), 102 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -37,10 +300,10 @@ Package Vendor: Keil
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  D:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  G:\Keil 5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

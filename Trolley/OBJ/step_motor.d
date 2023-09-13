@@ -2,7 +2,7 @@
 ..\obj\step_motor.o: ..\USER\allFiles.h
 ..\obj\step_motor.o: ..\USER\stm32f4xx.h
 ..\obj\step_motor.o: ..\CORE\core_cm4.h
-..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\step_motor.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\step_motor.o: ..\CORE\core_cmInstr.h
 ..\obj\step_motor.o: ..\CORE\core_cmFunc.h
 ..\obj\step_motor.o: ..\CORE\core_cm4_simd.h
@@ -35,9 +35,9 @@
 ..\obj\step_motor.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\step_motor.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\step_motor.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\step_motor.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\step_motor.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\step_motor.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\step_motor.o: ..\SYSTEM\sys\sys.h
 ..\obj\step_motor.o: ..\HARDWARE\LED\led.h
 ..\obj\step_motor.o: ..\HARDWARE\PWM\pwm.h
@@ -49,4 +49,4 @@
 ..\obj\step_motor.o: ..\HARDWARE\CAR_DRIVE\car_drive.h
 ..\obj\step_motor.o: ..\HARDWARE\State Machine\state.h
 ..\obj\step_motor.o: ..\HARDWARE\LCD\lcd.h
-..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\step_motor.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdlib.h

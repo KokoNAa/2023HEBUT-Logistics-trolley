@@ -2,7 +2,7 @@
 ..\obj\pwm.o: ..\USER\allFiles.h
 ..\obj\pwm.o: ..\USER\stm32f4xx.h
 ..\obj\pwm.o: ..\CORE\core_cm4.h
-..\obj\pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pwm.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pwm.o: ..\CORE\core_cmInstr.h
 ..\obj\pwm.o: ..\CORE\core_cmFunc.h
 ..\obj\pwm.o: ..\CORE\core_cm4_simd.h
@@ -35,9 +35,9 @@
 ..\obj\pwm.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\pwm.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\pwm.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\pwm.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\pwm.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\pwm.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\pwm.o: ..\SYSTEM\sys\sys.h
 ..\obj\pwm.o: ..\HARDWARE\LED\led.h
 ..\obj\pwm.o: ..\HARDWARE\PWM\pwm.h
@@ -49,4 +49,4 @@
 ..\obj\pwm.o: ..\HARDWARE\CAR_DRIVE\car_drive.h
 ..\obj\pwm.o: ..\HARDWARE\State Machine\state.h
 ..\obj\pwm.o: ..\HARDWARE\LCD\lcd.h
-..\obj\pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\pwm.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdlib.h

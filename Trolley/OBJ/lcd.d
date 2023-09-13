@@ -3,7 +3,7 @@
 ..\obj\lcd.o: ..\SYSTEM\sys\sys.h
 ..\obj\lcd.o: ..\USER\stm32f4xx.h
 ..\obj\lcd.o: ..\CORE\core_cm4.h
-..\obj\lcd.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\lcd.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\lcd.o: ..\CORE\core_cmInstr.h
 ..\obj\lcd.o: ..\CORE\core_cmFunc.h
 ..\obj\lcd.o: ..\CORE\core_cm4_simd.h
@@ -36,8 +36,8 @@
 ..\obj\lcd.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\lcd.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\lcd.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\lcd.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\lcd.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\lcd.o: ..\HARDWARE\LCD\font.h
 ..\obj\lcd.o: ..\SYSTEM\usart\usart.h
-..\obj\lcd.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\lcd.o: G:\Keil 5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\lcd.o: ..\SYSTEM\delay\delay.h
