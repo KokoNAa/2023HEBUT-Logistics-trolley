@@ -133,8 +133,17 @@ void ST1_Move(int32_t step, uint32_t accel, uint32_t decel, int32_t speed)
 			TIM_ITConfig(TIM3,TIM_IT_CC4,ENABLE);
 			TIM_CCxCmd(TIM3,TIM_Channel_1,TIM_CCx_Enable);
 			TIM_CCxCmd(TIM3,TIM_Channel_2,TIM_CCx_Enable);
-			//TIM_CCxCmd(TIM3,TIM_Channel_3,TIM_CCx_Enable);
-			//TIM_CCxCmd(TIM3,TIM_Channel_4,TIM_CCx_Enable);
+			if (out_ku == 0)
+			{
+				TIM_CCxCmd(TIM3,TIM_Channel_3,TIM_CCx_Disable);
+				TIM_CCxCmd(TIM3,TIM_Channel_4,TIM_CCx_Disable);
+				out_ku = 1;
+			}
+			else
+			{
+				TIM_CCxCmd(TIM3,TIM_Channel_3,TIM_CCx_Enable);
+				TIM_CCxCmd(TIM3,TIM_Channel_4,TIM_CCx_Enable);
+			}
 			TIM_Cmd(TIM3, ENABLE);
 }
 void ST2_Move(int32_t step, uint32_t accel, uint32_t decel, int32_t speed)

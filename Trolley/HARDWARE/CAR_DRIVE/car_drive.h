@@ -3,6 +3,4 @@
 #include "allFiles.h"
 
 
-
-void out_ku();
 #endif
