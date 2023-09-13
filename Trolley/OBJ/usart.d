@@ -1,5 +1,5 @@
 ..\obj\usart.o: ..\SYSTEM\usart\usart.c
-..\obj\usart.o: ..\SYSTEM\sys\sys.h
+..\obj\usart.o: ..\USER\allFiles.h
 ..\obj\usart.o: ..\USER\stm32f4xx.h
 ..\obj\usart.o: ..\CORE\core_cm4.h
 ..\obj\usart.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -35,5 +35,18 @@
 ..\obj\usart.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\usart.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\usart.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\usart.o: ..\SYSTEM\usart\usart.h
+..\obj\usart.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\usart.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\usart.o: ..\SYSTEM\sys\sys.h
+..\obj\usart.o: ..\HARDWARE\LED\led.h
+..\obj\usart.o: ..\HARDWARE\PWM\pwm.h
+..\obj\usart.o: ..\USER\allFiles.h
+..\obj\usart.o: ..\SYSTEM\delay\delay.h
+..\obj\usart.o: ..\SYSTEM\usart\usart.h
+..\obj\usart.o: ..\HARDWARE\STEP_MOTER\step_motor.h
+..\obj\usart.o: ..\HARDWARE\MH\MH.h
+..\obj\usart.o: ..\HARDWARE\CAR_DRIVE\car_drive.h
+..\obj\usart.o: ..\HARDWARE\State Machine\state.h
+..\obj\usart.o: ..\HARDWARE\LCD\lcd.h
+..\obj\usart.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h

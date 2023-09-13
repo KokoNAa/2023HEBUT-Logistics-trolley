@@ -46,6 +46,8 @@
 "..\obj\pwm.o"
 "..\obj\mh.o"
 "..\obj\car_drive.o"
+"..\obj\state.o"
+"..\obj\lcd.o"
 --strict --scatter "..\OBJ\Template.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

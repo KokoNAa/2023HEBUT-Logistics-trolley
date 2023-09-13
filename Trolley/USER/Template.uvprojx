@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\HARDWARE\LED;..\HARDWARE\PWM;..\HARDWARE\STEP_MOTER;..\SYSTEM;..\HARDWARE\MH;..\HARDWARE\CAR_DRIVE</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\HARDWARE\LED;..\HARDWARE\PWM;..\HARDWARE\STEP_MOTER;..\SYSTEM;..\HARDWARE\MH;..\HARDWARE\CAR_DRIVE;..\HARDWARE\State Machine;..\HARDWARE\LCD</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -654,9 +654,14 @@
               <FilePath>..\HARDWARE\CAR_DRIVE\car_drive.c</FilePath>
             </File>
             <File>
-              <FileName>car_drive.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\HARDWARE\CAR_DRIVE\car_drive.h</FilePath>
+              <FileName>state.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\State Machine\state.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\LCD\lcd.c</FilePath>
             </File>
           </Files>
         </Group>

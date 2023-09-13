@@ -14,5 +14,7 @@
 #include "step_motor.h"
 #include "MH.h"
 #include "car_drive.h"
+#include "state.h"
+#include "lcd.h"
 
 #endif

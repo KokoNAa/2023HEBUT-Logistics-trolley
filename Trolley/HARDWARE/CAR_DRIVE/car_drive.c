@@ -3,6 +3,7 @@
 float dir_error = 0;
 double Error_angle_out = 0;
 float kp = 0;
+int32_t step = 0;
 double speed_x = 0, angle_speed = 0;
 /*********************************************
  *º¯Êý£º³ö¿âº¯Êý
@@ -14,7 +15,6 @@ double speed_x = 0, angle_speed = 0;
 void out_ku()
 {
 	
-
 }
 
 /*********************************************
@@ -32,5 +32,5 @@ void direction_out()
 	
 	
 	//
-	Move_Transfrom(speed_x,Error_angle_out,angle_speed);
+	//Move_Transfrom(step, speed_x,Error_angle_out,angle_speed);
 }

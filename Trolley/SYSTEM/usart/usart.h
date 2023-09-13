@@ -26,14 +26,13 @@
 //3,增加了USART_REC_LEN,用于定义串口最大允许接收的字节数(不大于2的14次方)
 //4,修改了EN_USART1_RX的使能方式
 ////////////////////////////////////////////////////////////////////////////////// 	
-#define USART2_REC_LEN  			200  	//定义最大接收字节数 200
-#define EN_USART2_RX 			1		//使能（1）/禁止（0）串口1接收
-	  	
-extern u8  USART2_RX_BUF[USART2_REC_LEN]; //接收缓冲,最大USART_REC_LEN个字节.末字节为换行符 
-extern u16 USART2_RX_STA;         		//接收状态标记	
-extern u8 op1_Data;
+
+extern int op1_Data[3];
+extern int op1_State;
 //如果想串口中断接收，请不要注释以下宏定义
-void uart2_init(u32 bound);
+int data_judge(int data[]);
+void uart3_init(u32 bound);
+void uart1_init(u32 bound);
 #endif
 
 

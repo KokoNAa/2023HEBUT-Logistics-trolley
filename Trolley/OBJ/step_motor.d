@@ -47,3 +47,6 @@
 ..\obj\step_motor.o: ..\HARDWARE\STEP_MOTER\step_motor.h
 ..\obj\step_motor.o: ..\HARDWARE\MH\MH.h
 ..\obj\step_motor.o: ..\HARDWARE\CAR_DRIVE\car_drive.h
+..\obj\step_motor.o: ..\HARDWARE\State Machine\state.h
+..\obj\step_motor.o: ..\HARDWARE\LCD\lcd.h
+..\obj\step_motor.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
