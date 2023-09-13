@@ -1,6 +1,6 @@
 #include "allFiles.h"
 int op1_Data[3] = {100,120,140};
-int op1_State = 1;
+char op1_State = '1';
 int data[6] = {0, 0, 0, 0, 0, 0};
 u8 u3_count = 0;
 uint8_t  center_x = 0, center_y = 0;
@@ -117,9 +117,9 @@ void USART3_IRQHandler(void)
 			{
 				if (data[5] == 0xc3) 
 				{
-					op1_Data[0] = data[2];
-					op1_Data[1] = data[3];
-					op1_Data[2] = data[4];
+					op1_Data[0] = data[2];//颜色
+					op1_Data[1] = data[3];//x坐标
+					op1_Data[2] = data[4];//y坐标
 				}
 			}
 		}
@@ -139,18 +139,18 @@ void uart1_init(u32 bound)
 	USART_InitTypeDef USART_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
 	//GPIOA 和 USART1 时钟使能①
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,ENABLE); //使能 GPIOA 时钟
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB,ENABLE); //使能 GPIOA 时钟
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1,ENABLE);//使能 USART1 时钟
 	//USART_DeInit(USART1); //复位串口 1 ②
-	GPIO_PinAFConfig(GPIOA,GPIO_PinSource9,GPIO_AF_USART1); //PA9 复用为 USART1
-	GPIO_PinAFConfig(GPIOA,GPIO_PinSource10,GPIO_AF_USART1); //PA10 复用为 USART1
+	GPIO_PinAFConfig(GPIOB,GPIO_PinSource7,GPIO_AF_USART1); //PA9 复用为 USART1
+	GPIO_PinAFConfig(GPIOB,GPIO_PinSource6,GPIO_AF_USART1); //PA10 复用为 USART1
 	//USART1_TX PA.9 PA.10 ③
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9 | GPIO_Pin_10; //GPIOA9 与 GPIOA10
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_6; //GPIOA9 与 GPIOA10
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用功能
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; //速度 50MHz
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP; //推挽复用输出
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP; //上拉
-	GPIO_Init(GPIOA,&GPIO_InitStructure); //初始化 PA9，PA10
+	GPIO_Init(GPIOB,&GPIO_InitStructure); //初始化 PA9，PA10
 	//USART 初始化设置 ④
 	USART_InitStructure.USART_BaudRate = bound;//一般设置为 9600;
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为 8 位数据格式
@@ -254,4 +254,10 @@ void openmv_receive_data(int16_t com_data)
             rx_buffer_1[i] = 0x00;      //将存放数据数组清零
         }
     }
+}
+
+void USART_Senddata(u8 * str)
+{
+	USART_SendData(USART3,str[0]);
+	while( USART_GetFlagStatus(USART3,USART_FLAG_TC)!= SET);
 }
