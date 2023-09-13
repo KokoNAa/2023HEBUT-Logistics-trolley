@@ -41,24 +41,25 @@ typedef struct
 	
 //方向使能引脚定义
 #define ST1_DIR_GPIO_PORT GPIOA
-#define ST1_DIR_GPIO_PIN GPIO_Pin_11
-#define ST1_EN_GPIO_PORT GPIOA
-#define ST1_EN_GPIO_PIN GPIO_Pin_12
+#define ST1_DIR_GPIO_PIN GPIO_Pin_3
+#define ST1_EN_GPIO_PORT GPIOD
+#define ST1_EN_GPIO_PIN GPIO_Pin_1
 
-#define ST2_DIR_GPIO_PORT GPIOF
-#define ST2_DIR_GPIO_PIN GPIO_Pin_5
-#define ST2_EN_GPIO_PORT GPIOF
-#define ST2_EN_GPIO_PIN GPIO_Pin_13
+#define ST2_DIR_GPIO_PORT GPIOA
+#define ST2_DIR_GPIO_PIN GPIO_Pin_4
+#define ST2_EN_GPIO_PORT GPIOC
+#define ST2_EN_GPIO_PIN GPIO_Pin_1
 
-#define ST3_DIR_GPIO_PORT GPIOF
-#define ST3_DIR_GPIO_PIN GPIO_Pin_8
-#define ST3_EN_GPIO_PORT GPIOF
-#define ST3_EN_GPIO_PIN GPIO_Pin_11
+#define ST3_DIR_GPIO_PORT GPIOA
+#define ST3_DIR_GPIO_PIN GPIO_Pin_5
+#define ST3_EN_GPIO_PORT GPIOD
+#define ST3_EN_GPIO_PIN GPIO_Pin_3
 
-#define ST4_DIR_GPIO_PORT GPIOE
-#define ST4_DIR_GPIO_PIN GPIO_Pin_2
-#define ST4_EN_GPIO_PORT GPIOE
-#define ST4_EN_GPIO_PIN GPIO_Pin_3
+#define ST4_DIR_GPIO_PORT GPIOA
+#define ST4_DIR_GPIO_PIN GPIO_Pin_8
+#define ST4_EN_GPIO_PORT GPIOD
+#define ST4_EN_GPIO_PIN GPIO_Pin_4
+
 void step_motor_init(void);
 void Motor1_Run(uint32_t dir,uint32_t num,uint32_t speed);
 void Motor2_Run(uint32_t dir,uint32_t num,uint32_t speed);
@@ -72,6 +73,8 @@ void Move_Transfrom(int16_t Vx,int16_t Vy,int16_t Vz,uint32_t step);
 extern void speed1_decision(void);
 extern void speed2_decision(void);
 extern void speed3_decision(void);
+
+extern uint8_t  motor_sta;
 extern uint32_t sp; 
 void step_stop();
 void step_start();

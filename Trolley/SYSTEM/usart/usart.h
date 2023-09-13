@@ -28,11 +28,13 @@
 ////////////////////////////////////////////////////////////////////////////////// 	
 
 extern int op1_Data[3];
-extern int op1_State;
+extern char op1_State;
 //如果想串口中断接收，请不要注释以下宏定义
 int data_judge(int data[]);
 void uart3_init(u32 bound);
 void uart1_init(u32 bound);
+
+void USART_Senddata(u8 * str);
 #endif
 
 
